@@ -5,7 +5,18 @@
 ## I. Introduction
 This project uses BigQuery to analyze Ecommerce data, focusing on user behavior and sales patterns. It examines visits, transactions, and revenue by time and traffic sources, evaluates bounce rates and pageviews by customer types, and calculates average spending per session. Additionally, it identifies related product purchases and maps the customer journey from product views to purchases, offering insights to improve business strategies.
 
-## II. Data Acess
+## II. Recommendations:
+- This dataset provides crucial insights into user behavior, engagement, and revenue trends over the studied period. Optimizing landing pages and enhancing the user experience can help reduce high bounce rates from sources like Google and direct traffic. Additionally, leveraging cross-selling opportunities can help increase the average revenue per customer.
+- Furthermore, analyzing traffic sources with high bounce rates, such as YouTube or less popular search engines, helps identify the quality of traffic and improve customer acquisition strategies. To gain a deeper understanding of customer behavior, businesses should also integrate historical data and demographic information, which will help refine marketing strategies and optimize advertising campaigns.
+- In summary, combining user behavior analysis with appropriate marketing strategies will improve sales effectiveness and drive revenue growth.
+
+## III. Focus Data
+1. Analyze total visits, transactions, and revenue by month, week, and traffic source for specific periods.
+2. Evaluate bounce rates, pageviews, and average transactions based on customer types or traffic sources.
+3. Calculate average spending per session and identify related products purchased by customers who bought a specific product.
+4. Build a cohort map tracking product views to cart additions and purchases.
+
+## IV. Data Acess
 The Ecommerce Dataset is available in the public Google BigQuery dataset named **"ga_session"**. To access it, follow these steps:
 1. Log in to your Google Cloud Platform account and create a new project.
 2. Open the BigQuery console and choose the project you just created.
@@ -15,13 +26,7 @@ The Ecommerce Dataset is available in the public Google BigQuery dataset named *
 
 Table Schema: https://support.google.com/analytics/answer/3437719?hl=en
 
-## III. Focus Data
-1. Analyze total visits, transactions, and revenue by month, week, and traffic source for specific periods.
-2. Evaluate bounce rates, pageviews, and average transactions based on customer types or traffic sources.
-3. Calculate average spending per session and identify related products purchased by customers who bought a specific product.
-4. Build a cohort map tracking product views to cart additions and purchases.
-
-## IV. Exploring the Dataset
+## V. Exploring the Dataset
 Query 01: Calculate total visit, pageview, transaction for Jan, Feb and March 2017
 ```sql
 SELECT  
@@ -265,8 +270,3 @@ Analysis:
 - The table displays five different metrics and rates related to user behavior from January to March 2017.
 - In general, there was a steady increase in product views from January to March 2017. Along with this, both the add-to-cart and purchase rates also saw an upward trend, reflecting better user engagement and conversion rates.
 - Notably, the add-to-cart and purchase rates were significantly higher in March 2017, which could indicate improvements in the website's user experience or the effectiveness of marketing strategies during that period.
-
-## V. Conclusion:
-- In conclusion, this dataset provides crucial insights into user behavior, engagement, and revenue trends over the studied period. Optimizing landing pages and enhancing the user experience can help reduce high bounce rates from sources like Google and direct traffic. Additionally, leveraging cross-selling opportunities can help increase the average revenue per customer.
-- Furthermore, analyzing traffic sources with high bounce rates, such as YouTube or less popular search engines, helps identify the quality of traffic and improve customer acquisition strategies. To gain a deeper understanding of customer behavior, businesses should also integrate historical data and demographic information, which will help refine marketing strategies and optimize advertising campaigns.
-- In summary, combining user behavior analysis with appropriate marketing strategies will improve sales effectiveness and drive revenue growth.
